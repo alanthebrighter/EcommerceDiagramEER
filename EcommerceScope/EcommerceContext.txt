@@ -1,0 +1,49 @@
+venda de produtos 
+context geral
+
+pessoas envolvidas
+venda de produtos
+
+
+produto
+estoque
+cliente
+forncedor
+pedido
+
+
+context especiico
+
+produto
+produtos sao vendidos por uma unica Plataforma online
+produtos nao podem ter vendedores distintos
+cada produto tem 1 fornecedor
+um ou mais produto podem fazer parte de um pedido
+
+cliente
+cliente pode usar cpf ou cnpj 
+endereco determina frete
+cliente pode ter varios pedidos
+cliente tem period de devolucao
+
+pedido
+pedidos gerados poder clients
+possuem informacoes de compra, endereco e status de entrega
+um produto ou mais compoem um pedido
+pedido pode ser cancelado
+
+metodo de pagamento
+tem varios cartoes
+status entrega informacoes
+pedido pode ter status da entrega e codigo de rastreio 0️⃣
+entidade entrega pode ter cliente, status da entrega e codigo de rastreio 1️⃣
+
+ERR
+
+produto x estoque -- n-m -- ✅ quantidade na relacao
+produto x forncedor -- n-m -- ✅
+pedido x cliente -- n-1 -- ✅
+produto x pedido -- n-m -- ✅ quantidade na relacao
+produto x terceiro -- n-m -- ✅ quantidade na relacao
+
+
